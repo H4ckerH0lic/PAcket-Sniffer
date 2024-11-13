@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script type="module"
+        src="https://unpkg.com/@deckdeckgo/highlight-code@latest/dist/deckdeckgo-highlight-code/deckdeckgo-highlight-code.esm.js"></script>
+
+</head>
+
+<body>
+    <div id="root">
+        <div class="center-container">
+            
+            <div id="hc" class="header-container">
+                <header>
+                    <a href="/"><img src="{{ url_for('static', filename='logo.png') }}" id="top" class="header-logo"></a>
+
+                </header>
+
+
+            </div>
+
+            <main id="main">
+                <div class="window">
+                    <div class="window-title-bar">
+                        <span>&gt; </span>
+                        ABOUT.doc
+                    </div>
+
+                    <div class="window-content">
+                        
+                            
+                        <h2> Basic Terms </h2>
+                        <p>
+                            <strong>ARP</strong> = Address Resolution Protocol<br>
+                            <strong>ARP-Request</strong> = ARP broadcasts a request packet to all the machines on the
+                            LAN and asks if any of the machines are using that particular IP address.<br>
+                            <strong>ARP-Response</strong> = It is the MAC address response that the source receives from
+                            the destination which aids in further communication of the data.<br>
+                            <strong>IP-ADDRESS</strong> = a unique numerical identifier for every device or network
+                                that connects to the internet.<br>
+                                <strong>MAC-ADDRESS</strong> = a unique, 12-character alphanumeric attribute that is
+                                used to identify individual electronic devices on a network.<br>
+                                <strong>Gateway</strong> = A gateway is a network node used in telecommunications that
+                                connects two networks with different transmission protocols together.<br>
+                                <strong>Router</strong> = A router is a networking layer system used to manage and
+                                forward data packets to devices network while a gateway is simply a hardware that acts
+                                as a gate between the networks.<br>
+
+
+                        </p>
+                        
+
+                    </div>
+            </main>
+            <div class="nav-container" id="nc">
+                <div class="nav"><a id="start-btn" class="nav-btn" href="/">
+                        <p class="nav-btn-text">Home</p>
+                        <div></div>
+                    </a><a id="about-btn" class="nav-btn active" href="/about">
+                        <p class="nav-btn-text">About</p>
+                        <div></div>
+                    </a><a id="event-btn" class="nav-btn" href="/scan">
+                        <p class="nav-btn-text">Scan</p>
+                        <div></div>
+                    </a><a id="faq-btn" class="nav-btn" href="/spoof">
+                        <p class="nav-btn-text">Spoof</p>
+                        <div></div>
+                    </a><a id="coc-btn" class="nav-btn" href="/sniff_index">
+                        <p class="nav-btn-text">Sniff</p>
+                        <div></div>
+                    </a></div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
